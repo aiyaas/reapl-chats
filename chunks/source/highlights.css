@@ -1,0 +1,7 @@
+@font-face {font-family: 'ibm';src: url('../fonts/Hack-Regular.ttf');} mark {font-family: 'ibm';background: transparent;} .mark-a {background: transparent;background-image: linear-gradient(#eef3fa, #eef3fa/* #dfecff, #dfecff */);background-repeat: no-repeat;color: #2aa198 /* #4a5568 */;border-radius: 3px;line-height: 1.4em;padding: 1px 0.4em;vertical-align: middle;margin: 0em 0.2em;font-family: 'ibm';} .mark-a {animation: highlights 2s forwards;} .mark-b {background: transparent;background-image: linear-gradient(#f6f7fa, #f6f7fa);background-repeat: no-repeat;color: #4a5568;border-radius: 3px;line-height: 1.4em;padding: 1px 0.2em;vertical-align: middle;margin: 0em 0.2em;} .mark-b {animation: highlights 2s forwards;} @keyframes highlights {from {background-size: 0%;} to {background-size: 100%;}} .ellipsis {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+
+/** 
+ * line code for word line highlights 
+ * © 2022 ince
+ */
