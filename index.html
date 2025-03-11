@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="applicable-device"content="pc" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+  />
+  <title>REAPL</title>
+  <meta name="keywords" content="models,web,chat" data-rh="true" />
+  <meta name="application-name" content="Reapl">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="browsermode" content="application">
+  <meta name="x5-page-mode" content="app">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="author" content="REAPL" />
+  <meta name="description" content="It brings together the most advanced machine learning models in various fields and provides a one-stop service for model exploration, reasoning, training, deployment, and application experience." />
+  <meta name="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:title" content="REAPL, 0.0.1" />
+  <meta property="og:description" content="REAPL——It unifies advanced machine learning models in various fields and provides one-stop services for model exploration, reasoning, training, deployment and application." />
+  <link rel="search" type="application/opensearchdescription+xml" title="魔搭" href="opensearch.xml" />  
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIEdlbmVyYXRvcjogU1ZHIFJlcG8gTWl4ZXIgVG9vbHMgLS0+Cjxzdmcgd2lkdGg9IjgwMHB4IiBoZWlnaHQ9IjgwMHB4IiB2aWV3Qm94PSIwIC01NCAyNTYgMjU2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIj4KCTxnIGZpbGw9IiMwMDAwMDAiPgoJCTxwYXRoIGQ9Ik0yMDIuMTUwODQ2LDI5LjUzNjI3MTYgTDIwMi4wMjI5ODMsMjkuNTM2MjcxNiBMMTUyLjQxMjI3NiwwLjYzOTMxMzIzOCBMMTAzLjQ0MDg4MiwyOS4xNTI2ODM2IEw1My4xOTA4NjE0LDAgTDEuNDIxMDg1NDdlLTE0LDMwLjk0Mjc2MDcgTDEuNDIxMDg1NDdlLTE0LDg3LjIwMjMyNTYgTDEwMi42NzM3MDYsMTQ3LjA0MjA0NSBMMTUxLjc3Mjk2MywxMTguNjU2NTM3IEwyMDIuMTUwODQ2LDE0Ny44MDkyMjEgTDI1NS43MjUyOTUsMTE2Ljg2NjQ2IEwyNTUuNzI1Mjk1LDYwLjYwNjg5NDkgTDIwMi4xNTA4NDYsMjkuNTM2MjcxNiBMMjAyLjE1MDg0NiwyOS41MzYyNzE2IFogTTIwMS44OTUxMiw4Ny4yMDIzMjU2IEwxNTkuODI4MzA5LDYyLjc4MDU1OTkgTDIwMi4yNzg3MDgsMzcuOTc1MjA2MyBMMjQ0LjM0NTUxOSw2Mi42NTI2OTczIEwyMDEuODk1MTIsODcuMjAyMzI1NiBMMjAxLjg5NTEyLDg3LjIwMjMyNTYgWiBNMTAyLjI5MDExOCwzNy41OTE2MTg0IEwxNDQuNzQwNTE3LDYyLjE0MTI0NjcgTDEwMi44MDE1NjksODYuNTYzMDEyNCBMNjAuNDc5MDMyMyw2MS44ODU1MjE0IEwxMDIuMjkwMTE4LDM3LjU5MTYxODQgTDEwMi4yOTAxMTgsMzcuNTkxNjE4NCBaIE0xOTQuNjA2OTUsMzMuNzU1NzM5IEwxNTMuMDUxNTg5LDU3LjkyMTc3OTMgTDExMC43MjkwNTMsMzMuMzcyMTUxIEwxNTIuNDEyMjc2LDkuMDc4MjQ3OTggTDE5NC42MDY5NSwzMy43NTU3MzkgTDE5NC42MDY5NSwzMy43NTU3MzkgWiBNOTUuNTEzMzk3NywzMi45ODg1NjMxIEw4Ni45NDY2MDAzLDM3Ljk3NTIwNjMgTDUyLjI5NTgyMjgsNTcuNTM4MTkxNCBMMTAuOTk2MTg3NywzMi45ODg1NjMxIEw1My4zMTg3MjQsOC40Mzg5MzQ3NCBMOTUuNTEzMzk3NywzMi45ODg1NjMxIEw5NS41MTMzOTc3LDMyLjk4ODU2MzEgWiBNNy40MTYwMzM1NiwzOS4xMjU5NzAxIEw0OC45NzEzOTQsNjQuMTg3MDQ5MSBMNDguOTcxMzk0LDEwOC40Mjc1MjUgTDcuNDE2MDMzNTYsODMuMTEwNzIwOSBMNy40MTYwMzM1NiwzOS4xMjU5NzAxIEw3LjQxNjAzMzU2LDM5LjEyNTk3MDEgWiBNNTcuMjgyNDY2MSw2OC41MzQzNzkxIEw5OC44Mzc4MjY2LDkzLjIxMTg3MDEgTDk4LjgzNzgyNjYsMTM3LjMyNDQ4MyBMNTcuMjgyNDY2MSwxMTIuNjQ2OTkyIEw1Ny4yODI0NjYxLDY4LjUzNDM3OTEgTDU3LjI4MjQ2NjEsNjguNTM0Mzc5MSBaIE0xNTYuMTIwMjkzLDY5LjA0NTgyOTcgTDE5OC40NDI4MjksOTMuOTc5MDQ1OSBMMTk4LjQ0MjgyOSwxMzcuNzA4MDcxIEwxNTYuMTIwMjkzLDExMi41MTkxMyBMMTU2LjEyMDI5Myw2OS4wNDU4Mjk3IEwxNTYuMTIwMjkzLDY5LjA0NTgyOTcgWiI+Cg08L3BhdGg+CgkJPHBhdGggZD0iTTU3LjI4MjQ2NjEsMTEyLjc3NDg1NSBMOTguODM3ODI2NiwxMzcuMTk2NjIxIEw5OC44Mzc4MjY2LDkzLjIxMTg3MDEgTDU3LjI4MjQ2NjEsNjguNTM0Mzc5MSBMNTcuMjgyNDY2MSwxMTIuNzc0ODU1IFogTTcuNDE2MDMzNTYsODIuOTgyODU4MyBMNDguOTcxMzk0LDEwOC4yOTk2NjIgTDQ4Ljk3MTM5NCw2NC4xODcwNDkxIEw3LjQxNjAzMzU2LDM5LjEyNTk3MDEgTDcuNDE2MDMzNTYsODIuOTgyODU4MyBaIE0xNTYuMTIwMjkzLDExMi42NDY5OTIgTDE5OC40NDI4MjksMTM3LjgzNTkzNCBMMTk4LjQ0MjgyOSw5My45NzkwNDU5IEwxNTYuMTIwMjkzLDY5LjA0NTgyOTcgTDE1Ni4xMjAyOTMsMTEyLjY0Njk5MiBaIiBvcGFjaXR5PSIwLjUiPgoNPC9wYXRoPgoJPC9nPgo8L3N2Zz4=" />
+  <!-- The above (auto) meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  
+  <link rel="stylesheet" href="chunks/prism.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="chunks/style.css" />
+  <link rel="stylesheet" href="chunks/source/highlights.css" />
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script defer src="chunks/service-worker-registration.js"></script>
+  <script defer src="chunks/prism.js"></script>
+  <script defer src="chunks/source/words.js"></script>
+  <script defer src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script defer src="chunks/source/case.js"></script>
+  <script defer src="chunks/source/menu.js"></script>
+  <script defer src="chunks/source/extended.js"></script>
+</head>
+
+<body>
+  <!-- Char Area -->
+  <section class="message-area">
+    <div class="small">
+      <div class="row">
+        <div class="col-12">
+          <div class="chat-area">
+            <!-- Chat List -->
+            <div class="chatlist">
+              <div class="modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="chat-header">
+                    <div class="msg-search">
+                      <input type="search" class="form-control chat-search" id="inlineFormInputGroup" placeholder="Search or start a chat" aria-label="search" />
+                    </div>
+                    
+                    <!-- Button Main Menu On Bar -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="Open-tab" data-bs-toggle="tab" data-bs-target="#Open" type="button" role="tab" aria-controls="Open" aria-selected="true">Chat</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Closed-tab" data-bs-toggle="tab" data-bs-target="#Closed" type="button" role="tab" aria-controls="Closed" aria-selected="false">Completions</button>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- Chat List -->
+                    <div class="chat-lists">
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="Open" role="tabpanel" aria-labelledby="Open-tab">
+                          <!-- Chat List Open -->
+                          <div class="chat-list" id="listItems">
+                            <div class="animated" style="--d:0s">
+                              <a href="#" class="d-flex align-items-center" id="a">
+                                <div class="flex-shrink-0">
+                                  <img class="msg-icon" src="chunks/media/compose-8o.svg" alt="icon">
+                                  <span class="active"></span>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                  <div class="d-flex align-items-center">
+                                    <h3>Reapl (Docs)</h3>
+                                    &emsp;
+                                    <p class="mark-b ellipsis" style="color:#2aa198;border-radius:50px;padding:0px 8px 0px 8px;" id="numMsg"></p>
+                                  </div>
+                                  <p id="msgSplitJd"></p>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- New Items -->
+                          </div>
+                          <div class="chat-list">
+                            <!-- Not Found For Search -->
+                            <br />
+                            <p id="notFound"></p>
+                          </div>
+                          <!-- Chat List -->
+                        </div>
+                        <div class="tab-pane fade" id="Closed" role="tabpanel" aria-labelledby="Closed-tab">
+
+                          <!-- Chat List Closed -->
+                          <div class="chat-list d-min mb-4">
+                            <a href="#" class="d-flex align-items-center">
+                              <div class="flex-shrink-0">
+                                <img class="msg-icon" src="chunks/media/line-alt-s.svg" style="--b:0" alt="icon">
+                              </div>
+                              <div class="flex-grow-1 ms-3">
+                                <h3>Update 5.2 latest</h3>
+                                <p>Maximize correctness and consistent behavior in model output, version 5.2 latest.</p>
+                              </div>
+                            </a>
+                            <!-- New Items -->
+                          </div>
+                          
+                          <div class="chat-list">
+                            <p>REAPL——Bringing together advanced machine learning models in various fields, providing one-stop services for model exploration, reasoning, training, deployment and application. Here, we build a model open source community to discover, learn, customize and share our favorite models.</p>
+                             <br />
+                             <p>All data that (INCE) shares can be used for free without violating the license. May 24, 2022 (REAPL).</p>
+                          </div>
+                          <!-- Chat List -->
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- Chat List -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Chat List -->
+
+
+
+            <!-- Chat Box -->
+            <div class="chatbox">
+              <div class="modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="msg-head">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="d-flex align-items-center">
+                          <span class="chat-icon"><svg class="img-fluid" height="40px" width="40px" fill="#000000" width="800px" height="800px" viewBox="-12 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><title>angle-left</title><path d="M7.28 23.28c-0.2 0-0.44-0.080-0.6-0.24l-6.44-6.44c-0.32-0.32-0.32-0.84 0-1.2l6.44-6.44c0.32-0.32 0.84-0.32 1.2 0 0.32 0.32 0.32 0.84 0 1.2l-5.8 5.84 5.84 5.84c0.32 0.32 0.32 0.84 0 1.2-0.16 0.16-0.44 0.24-0.64 0.24z"></path></svg></span>
+                          <div class="flex-shrink-01">
+                            <img class="msg-icon" src="chunks/media/compose-8o.svg" alt="icon2">
+                          </div>
+                          <div class="flex-grow-1 ms-3">
+                            <h3>Reapl (Docs)</h3>
+                            <p>5.2 latest</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Drop-down Menu -->
+                      <div class="col-4">
+                        <ul class="moreoption">
+                          <li class="navbar nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><svg class="img-fluid" width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6C12.5523 6 13 5.55228 13 5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#" id="dellChat">Clear chat</a></li>
+                              <li><a class="dropdown-item" href="#" onclick="downloads()">Export chat</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <!-- Area for chat -->
+                  <div class="modal-body">
+                    <div class="msg-body">
+                      <ul id="message"></ul>
+                    </div>
+                  </div>
+                  
+                  <!-- Chat Area -->
+                  <div class="send-box">
+                    <div class="pop-up" id="pop_up"></div>
+                    
+                    <div class="add-area mb-2">
+                    <form class="mb-2" action="">                      
+                      <textarea 
+                          type="text"
+                          class="form-control chat-area" 
+                          aria-label="messages" 
+                          spellcheck="false"
+                          id="inputUser"
+                          placeholder="Ask Assistant, like @ How are you."                          
+                          required
+                      ></textarea>        
+                    </form>
+                    
+                    <div class="send-btns">
+                      <div class="attach">
+                        <select class="form-control" style="--b:#f6f7fa; margin-right:6px;" id="SELECTOR">                          
+                          <option value="groq">llama-3.3-70b-versatile</option>
+                          <option value="gemini">gemini-3.5-flash</option>
+                          <option value="github">GitHub</option>
+                          <option value="youtube">YouTube</option>
+                          <option value="weather">Weather</option>
+                        </select>
+                        <div id="token"></div>
+                        <button class="form-control" style="--b:transparent;border:none;" id="useRecord">
+                          <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C9.79086 1 8 2.79086 8 5V12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12V5C16 2.79086 14.2091 1 12 1ZM10 5C10 3.89543 10.8954 3 12 3C13.1046 3 14 3.89543 14 5V12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12V5Z" fill="#333333"/><path d="M5 9C5.55228 9 6 9.44771 6 10V12C6 13.5913 6.63214 15.1174 7.75736 16.2426C8.88258 17.3679 10.4087 18 12 18C13.5913 18 15.1174 17.3679 16.2426 16.2426C17.3679 15.1174 18 13.5913 18 12V10C18 9.44771 18.4477 9 19 9C19.5523 9 20 9.44771 20 10V12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.3938 18.9199 14.7518 19.717 12.9981 19.9375C12.9993 19.9582 13 19.979 13 20V22C13 22.5523 12.5523 23 12 23C11.4477 23 11 22.5523 11 22V20C11 19.979 11.0006 19.9582 11.0019 19.9375C9.2482 19.717 7.60623 18.9199 6.34315 17.6569C4.84285 16.1566 4 14.1217 4 12V10C4 9.44771 4.44772 9 5 9Z" fill="#333333"/></svg>
+                        </button>
+                        &emsp;
+                        <div class="flex-end">
+                        <button class="form-control" style="--b:#000;width:auto;" id="send">
+                         <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Arrow / Arrow_Up_MD"><path id="Vector" d="M12 19V5M12 5L6 11M12 5L18 11" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+                        </button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!-- Added To Button Menu -->
+                    
+                    <div class="about">
+                       Reapl can make mistakes, so double check the response.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Chat Box -->
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Char Area -->
+  
+  <!-- partial -->
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+      $(".chat-list #a").click(function() {
+        $(".chatbox").addClass("showbox");
+        return false;
+      });
+
+      $(".chat-icon").click(function() {
+        $(".chatbox").removeClass("showbox");
+      });
+    });
+  </script>
+</body>
+</html>
+
